@@ -1,0 +1,1372 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>tldr</title>
+  <style type="text/css">
+    table{
+      border-collapse:collapse;
+      border-spacing:0;
+    }
+    td.text,.has-btn{
+      mso-line-height-rule:exactly;
+      -webkit-font-smoothing:antialiased;
+      -ms-text-size-adjust:none;
+      -webkit-text-size-adjust:none;
+    }
+    a[x-apple-data-detectors]{
+      color:inherit !important;
+      text-decoration:none !important;
+      font-size:inherit !important;
+      font-family:inherit !important;
+      font-weight:inherit !important;
+      line-height:inherit !important;
+    }
+  @media screen and (max-width: 600px){
+    .text{
+      font-size:14px !important;
+      line-height:21px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .h1{
+      font-size:20px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .h2{
+      font-size:18px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .h3{
+      font-size:16px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .h4{
+      font-size:14px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .h5{
+      font-size:14px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    table{
+      line-height:1.5 !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .h1,.h2,.h3,.h4,.h5{
+      line-height:1.2 !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .cs-logo{
+      width:120px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .flex-size{
+      min-width: 280px !important;
+      max-width:100% !important;
+      width:100% !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .flex-size img{
+      max-width:100% !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-height{
+      height:10px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-db{
+      display:block !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-dib{
+      display:inline-block !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-hf{
+      height:0 !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-paf{
+      padding:0 !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-pbf{
+      padding-bottom:0 !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-pbm{
+      padding-bottom:16px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-plf{
+      padding-left:0 !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-prf{
+      padding-right:0 !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-pts{
+      padding-top:8px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-ptm{
+      padding-top:16px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-tac{
+      text-align:center !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .s-tal{
+      text-align:left !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .dayOfWeek{
+      width:280px !important;
+      margin: 0px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .dayOfWeek td{
+      text-align: right !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .sectionHeader{
+      width:280px !important;
+      margin: 0px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .btn-a{
+      width: 100% !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .eventOfDay{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      max-width: 280px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .borders{
+      line-height: 0px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .borderAfterCalendar{
+      line-height: 2px !important;
+    }
+
+} @media screen and (max-width: 600px){
+    .roottldr{
+      font-size: 13px !important;
+    }
+
+} @media screen and (min-device-width: 375px) and (max-device-width: 667px){
+    table{
+      font-size:16px !important;
+    }
+
+} @media screen and (min-device-width: 375px) and (max-device-width: 667px){
+    table.footer-content{
+      font-size:12px !important;
+    }
+
+} @media screen and (max-width: 360px){
+    .customAdjust{
+      width:160px !important;
+    }
+
+} @media screen and (min-width: 361px) and (max-width: 400px){
+    .customAdjust{
+      width:200px !important;
+    }
+
+} @media screen and (min-width: 401px) and (max-width: 450px){
+    .customAdjust{
+      width:240px !important;
+    }
+
+}</style></head>
+
+<!-- tl;dr WEEKLY NEWSLETTER; ROOT SUTD STUDENT GOVERNMENT -->
+ 
+  <body style="margin: 0; padding: 0;">
+    <!-- tl;dr LOGO -->
+    <table bgcolor="#f7f7f7" border="0" cellpadding="0" cellspacing="0" class="header" width="100%" style="border-collapse: collapse;border-spacing: 0;">
+      <tr>
+        <td align="center" style="border-bottom: 1px solid #f7f7f7; padding: 16px 0 8px 0;">
+          <a href="">
+            <img style="padding-left: 81px; padding-right:27px; width:220px;" alt="ROOT website" border="0" src="http://i.imgur.com/DurINrx.png" width="220px">
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <!--EVENTS HEADER-->
+    <table bgcolor="#1d2023" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;border-spacing: 0;">
+      <tr>
+        <td align="center" style="padding: 8px 24px">
+          <!--[if (IE)|mso]>
+          <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+          <tr>
+          <td>
+          <![endif]-->
+
+          <!--EVENTS HEADER WRAPPER TABLE--><!--SET WIDTH HERE-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+            <tr>
+              <td align="left" style="padding-top: 0px;">
+                <!--[if (IE)|mso]>
+                <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+                <tr>
+                <td>
+                <![endif]-->
+
+                <!--EVENTS HEADER CONTENT TABLE--><!--SET WIDTH HERE-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+                  <tr>
+                    <!--CHANGE CONTENT ALIGN HERE-->
+                    <td align="center" class="s-tac" style="font-size: 0;">
+
+                      <!--FIRST COLUMN-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <table align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="flex-size sectionHeader" width="210" style="vertical-align:middle; border-collapse: collapse;border-spacing: 0;margin-top:0px;margin-bottom:0px;margin-left:10px;margin-right:10px;">
+                          <tr>
+                            <td valign="middle" align="center" style="vertical-align:middle; padding-top:10px; padding-bottom:10px; margin:0px;">
+                              <p style="font-family: Trebuchet MS, sans-serif; font-weight:lighter;color: #d7d7d7;font-size: 16px;letter-spacing: 0em; margin-bottom:0px; margin-top:0px; padding-top:0px;">EVENTS OF THE WEEK</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td>
+                      <![endif]-->
+                    </td>
+                  </tr>
+                </table>
+                <!--[if (IE)|mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <!--MONDAY-->
+    <table bgcolor="#333333" background="http://i.imgur.com/VfLbJNf.jpg" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;border-spacing: 0;background-image:url(http://i.imgur.com/VfLbJNf.jpg);background-size:cover;">
+      <tr>
+        <td align="center" style="padding: 8px 24px">
+          <!--[if (IE)|mso]>
+          <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+          <tr>
+          <td>
+          <![endif]-->
+
+          <!--MONDAY WRAPPER CONTENT TABLE--><!--SET WIDTH HERE-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+            <tr>
+              <td align="left" style="padding-top: 0px;">
+                <!--[if (IE)|mso]>
+                <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+                <tr>
+                <td>
+                <![endif]-->
+
+                <!--MONDAY CONTENT TABLE--><!--SET WIDTH HERE-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+                  <tr>
+                    <!--CHANGE CONTENT ALIGN HERE-->
+                    <td align="center" class="s-tac" style="font-size: 0;">
+
+                      <!--FIRST COLUMN-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <table align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="flex-size dayOfWeek" width="200" style="vertical-align:middle; border-collapse: collapse;border-spacing: 0;margin-top:0px;margin-bottom:0px;margin-left:15px;margin-right:15px;">
+                          <tr>
+                            <td valign="middle" align="center" style="vertical-align:middle; padding-top:10px; padding-bottom:10px; margin:0px;">
+                              <p style="font-family: Helvetica, sans-serif; font-weight:lighter;color: #ffffff;font-size: 40px;letter-spacing: 0em; margin-bottom:0px; margin-top:0px; padding-top:0px;">MON</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td>
+                      <![endif]-->
+
+                      <!--EVENTS OF DAY-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <!--SPECIAL NOTHING EVENT-->
+                        <table valign="middle" align="center" border="0" cellpadding="0" cellspacing="0" class="content eventOfDay" style="vertical-align:middle; max-width: 300px;border-collapse: collapse;border-spacing: 0;margin-right:0px;margin-left:0px;margin-top:0px;margin-bottom:0px;" width="auto">
+                          <tr>
+                            <td align="left">
+                              <!--THE FONT COLOUR HERE #CCCCCC IS LIGHTER THAN THE OTHER NOTHING EVENT'S #999999-->
+                              <p style="font-family: Trebuchet MS, Helvetica, Arial, sans-serif;color:#cccccc;font-size: 16px;font-weight: 700;line-height: 18px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none; padding-top:0px; margin-top:24px;margin-bottom:36px;">
+                                NOTHING TODAY
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #cccccc; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:11.3em;line-height: 15px; padding:0; margin-top:0px; margin-bottom:0px;">
+                                &#8203;&nbsp;
+                                &#8203;
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        
+                      </div>
+
+                    </td>
+                  </tr>
+                </table>
+                <!--[if (IE)|mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <!--SEPERATOR-->
+    <table class="borders" style="border-collapse: collapse;border-spacing: 0;font-size: 1px;line-height: 0px;background-color: #f7f7f7; Margin-left: auto;Margin-right: auto;" width="100%">
+          <tbody><tr><td style="padding: 0;vertical-align: top;">&#8203;</td></tr>
+          </tbody>
+    </table>
+
+    <!--TUESDAY-->
+    <table bgcolor="#002f2c" background="" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;border-spacing: 0;background-image:url();background-size:cover;">
+      <tr>
+        <td align="center" style="padding: 8px 24px">
+          <!--[if (IE)|mso]>
+          <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+          <tr>
+          <td>
+          <![endif]-->
+
+          <!--TUESDAY WRAPPER CONTENT TABLE--><!--SET WIDTH HERE-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+            <tr>
+              <td align="left" style="padding-top: 0px;">
+                <!--[if (IE)|mso]>
+                <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+                <tr>
+                <td>
+                <![endif]-->
+
+                <!--TUESDAY CONTENT TABLE--><!--SET WIDTH HERE-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+                  <tr>
+                    <!--CHANGE CONTENT ALIGN HERE-->
+                    <td align="center" class="s-tac" style="font-size: 0;">
+
+                      <!--FIRST COLUMN-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <table align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="flex-size dayOfWeek" width="200" style="vertical-align:middle; border-collapse: collapse;border-spacing: 0;margin-top:0px;margin-bottom:0px;margin-left:15px;margin-right:15px;">
+                          <tr>
+                            <td valign="middle" align="center" style="vertical-align:middle; padding-top:10px; padding-bottom:10px; margin:0px;">
+                              <p style="font-family: Helvetica, sans-serif; font-weight:lighter;color: #ffffff;font-size: 40px;letter-spacing: 0em; margin-bottom:0px; margin-top:0px; padding-top:0px;">TUE</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td>
+                      <![endif]-->
+
+                      <!--EVENTS OF DAY-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <!--SPECIAL NOTHING EVENT-->
+                        <table valign="middle" align="center" border="0" cellpadding="0" cellspacing="0" class="content eventOfDay" style="vertical-align:middle; max-width: 300px;border-collapse: collapse;border-spacing: 0;margin-right:0px;margin-left:0px;margin-top:0px;margin-bottom:0px;" width="auto">
+                          <tr>
+                            <td align="left">
+                              <p style="font-family: Trebuchet MS, Helvetica, Arial, sans-serif;color:#999999;font-size: 16px;font-weight: 700;line-height: 18px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none; padding-top:0px; margin-top:24px;margin-bottom:36px;">
+                                NOTHING TODAY
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #cccccc; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:11.3em;line-height: 15px; padding:0; margin-top:0px; margin-bottom:0px;">
+                                &#8203;&nbsp;
+                                &#8203;
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+
+                    </td>
+                  </tr>
+                </table>
+                <!--[if (IE)|mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <!--SEPERATOR-->
+    <table class="borders" style="border-collapse: collapse;border-spacing: 0;font-size: 1px;line-height: 0px;background-color: #f7f7f7; Margin-left: auto;Margin-right: auto;" width="100%">
+          <tbody><tr><td style="padding: 0;vertical-align: top;">&#8203;</td></tr>
+          </tbody>
+    </table>
+
+    <!--WED-->
+    <table bgcolor="#141c2f" background="http://i.imgur.com/CnM8VJM.jpg" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;border-spacing: 0;background-image:url(http://i.imgur.com/CnM8VJM.jpg);background-size:cover;">
+      <tr>
+        <td align="center" style="padding: 8px 24px">
+          <!--[if (IE)|mso]>
+          <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+          <tr>
+          <td>
+          <![endif]-->
+
+          <!--WED WRAPPER CONTENT TABLE--><!--SET WIDTH HERE-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+            <tr>
+              <td align="left" style="padding-top: 0px;">
+                <!--[if (IE)|mso]>
+                <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+                <tr>
+                <td>
+                <![endif]-->
+
+                <!--WED CONTENT TABLE--><!--SET WIDTH HERE-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+                  <tr>
+                    <!--CHANGE CONTENT ALIGN HERE-->
+                    <td align="center" class="s-tac" style="font-size: 0;">
+
+                      <!--FIRST COLUMN-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <table align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="flex-size dayOfWeek" width="200" style="vertical-align:middle; border-collapse: collapse;border-spacing: 0;margin-top:0px;margin-bottom:0px;margin-left:15px;margin-right:15px;">
+                          <tr>
+                            <td valign="middle" align="center" style="vertical-align:middle; padding-top:10px; padding-bottom:10px; margin:0px;">
+                              <p style="font-family: Helvetica, sans-serif; font-weight:lighter;color: #ffffff;font-size: 40px;letter-spacing: 0em; margin-bottom:0px; margin-top:0px; padding-top:0px;">WED</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td>
+                      <![endif]-->
+
+                      <!--EVENTS OF DAY-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <!--FIRST EVENT OF DAY-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="content eventOfDay" style="max-width: 300px;border-collapse: collapse;border-spacing: 0;margin-right:0px;margin-left:0px;margin-top:0px;margin-bottom:0px;" width="auto">
+                          <tr>
+                            <td align="left">
+                              <p style="font-family: Trebuchet MS, Helvetica, Arial, sans-serif;color:#ffffff;font-size: 18px;font-weight: 700;line-height: 18px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none; padding-top:12px; margin-top:0px;margin-bottom:0;">
+                                E-Sports: Showcase and Information Session
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #cccccc; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:1px; margin-bottom:4px;">
+                                Canteen, 1pm - 6pm
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #eeeeee; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:8px;">
+                                Open gaming session outside the canteen! Challenge your fellow gamers to Worms Armageddon and other exciting games!
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="padding-top: 0px; padding-bottom:12px; margin-bottom:0px;">
+                              <!--[if mso]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://root.sutd.edu.sg" style="height:42px;v-text-anchor:middle;width:220px;" arcsize="250%" stroke="f" fillcolor="#ffae1c">
+                                <w:anchorlock/>
+                                <center>
+                              <![endif]-->
+                              <a class="btn-a" target="_blank" href="http://root.sutd.edu.sg/2015/nov/e-sports-showcase-and-infosession#overlay-context=" style="background-color:#335533; border-radius:4px; color:#ffffff; display:inline-block; font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif; font-size:13px; font-weight:400; line-height:28px; text-align:center; text-decoration:none; width:50%;">Read more</a>
+                              <!--[if mso]>
+                                </center>
+                                </v:roundrect>
+                              <![endif]-->
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+
+                    </td>
+                  </tr>
+                </table>
+                <!--[if (IE)|mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <!--SEPERATOR-->
+    <table class="borders" style="border-collapse: collapse;border-spacing: 0;font-size: 1px;line-height: 0px;background-color: #f7f7f7; Margin-left: auto;Margin-right: auto;" width="100%">
+          <tbody><tr><td style="padding: 0;vertical-align: top;">&#8203;</td></tr>
+          </tbody>
+    </table>
+
+    <!--THU-->
+    <table bgcolor="#001f1c" background="http://photointopainting.com/wp-content/uploads/2009/12/PIP-Free-Corel-Painter-Background-005_700px.jpg" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;border-spacing: 0;background-image:url(http://photointopainting.com/wp-content/uploads/2009/12/PIP-Free-Corel-Painter-Background-005_700px.jpg);background-size:cover;">
+      <tr>
+        <td align="center" style="padding: 8px 24px">
+          <!--[if (IE)|mso]>
+          <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+          <tr>
+          <td>
+          <![endif]-->
+
+          <!--THU WRAPPER CONTENT TABLE--><!--SET WIDTH HERE-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+            <tr>
+              <td align="left" style="padding-top: 0px;">
+                <!--[if (IE)|mso]>
+                <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+                <tr>
+                <td>
+                <![endif]-->
+
+                <!--THU CONTENT TABLE--><!--SET WIDTH HERE-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+                  <tr>
+                    <!--CHANGE CONTENT ALIGN HERE-->
+                    <td align="center" class="s-tac" style="font-size: 0;">
+
+                      <!--FIRST COLUMN-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <table align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="flex-size dayOfWeek" width="200" style="vertical-align:middle; border-collapse: collapse;border-spacing: 0;margin-top:0px;margin-bottom:0px;margin-left:15px;margin-right:15px;">
+                          <tr>
+                            <td valign="middle" align="center" style="vertical-align:middle; padding-top:10px; padding-bottom:10px; margin:0px;">
+                              <p style="font-family: Helvetica, sans-serif; font-weight:lighter;color: #ffffff;font-size: 40px;letter-spacing: 0em; margin-bottom:0px; margin-top:0px; padding-top:0px;">THU</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td>
+                      <![endif]-->
+
+                      <!--EVENTS OF DAY-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <!--FIRST EVENT OF DAY-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="content eventOfDay" style="max-width: 300px;border-collapse: collapse;border-spacing: 0;margin-right:0px;margin-left:0px;margin-top:0px;margin-bottom:0px;" width="auto">
+                          <tr>
+                            <td align="left">
+                              <p style="font-family: Trebuchet MS, Helvetica, Arial, sans-serif;color:#ffffff;font-size: 18px;font-weight: 700;line-height: 18px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none; padding-top:12px; margin-top:0px;margin-bottom:0;">
+                                Makerfaire Open Briefing
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #cccccc; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:1px; margin-bottom:0px;">
+                                Makerfaire 2016
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #cccccc; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:4px;">
+                                LT4 2.404, 7pm
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #eeeeee; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:8px;">
+                                We believe that EVERYONE can make! Come down to know more about embarking on your very own project with us (or take up our proposed projects)!
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="padding-top: 0px; padding-bottom:12px; margin-bottom:0px;">
+                              <!--[if mso]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://root.sutd.edu.sg" style="height:42px;v-text-anchor:middle;width:220px;" arcsize="250%" stroke="f" fillcolor="#ffae1c">
+                                <w:anchorlock/>
+                                <center>
+                              <![endif]-->
+                              <a class="btn-a" target="_blank" href="http://root.sutd.edu.sg/2015/nov/makerfaire-open-briefing" style="background-color:#335533; border-radius:4px; color:#ffffff; display:inline-block; font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif; font-size:13px; font-weight:400; line-height:28px; text-align:center; text-decoration:none; width:50%;">Read more</a>
+                              <!--[if mso]>
+                                </center>
+                                </v:roundrect>
+                              <![endif]-->
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+
+                    </td>
+                  </tr>
+                </table>
+                <!--[if (IE)|mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <!--SEPERATOR-->
+    <table class="borders" style="border-collapse: collapse;border-spacing: 0;font-size: 1px;line-height: 0px;background-color: #f7f7f7; Margin-left: auto;Margin-right: auto;" width="100%">
+          <tbody><tr><td style="padding: 0;vertical-align: top;">&#8203;</td></tr>
+          </tbody>
+    </table>
+
+    <!--FRI-->
+    <table bgcolor="#002c24" background="http://i.imgur.com/C9RNUaS.jpg" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;border-spacing: 0;background-image:url(http://i.imgur.com/C9RNUaS.jpg);background-size:cover;">
+      <tr>
+        <td align="center" style="padding: 8px 24px">
+          <!--[if (IE)|mso]>
+          <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+          <tr>
+          <td>
+          <![endif]-->
+
+          <!--FRI WRAPPER CONTENT TABLE--><!--SET WIDTH HERE-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+            <tr>
+              <td align="left" style="padding-top: 0px;">
+                <!--[if (IE)|mso]>
+                <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+                <tr>
+                <td>
+                <![endif]-->
+
+                <!--FRI CONTENT TABLE--><!--SET WIDTH HERE-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+                  <tr>
+                    <!--CHANGE CONTENT ALIGN HERE-->
+                    <td align="center" class="s-tac" style="font-size: 0;">
+
+                      <!--FIRST COLUMN-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <table align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="flex-size dayOfWeek" width="200" style="vertical-align:middle; border-collapse: collapse;border-spacing: 0;margin-top:0px;margin-bottom:0px;margin-left:15px;margin-right:15px;">
+                          <tr>
+                            <td valign="middle" align="center" style="vertical-align:middle; padding-top:10px; padding-bottom:10px; margin:0px;">
+                              <p style="font-family: Helvetica, sans-serif; font-weight:lighter;color: #ffffff;font-size: 40px;letter-spacing: 0em; margin-bottom:0px; margin-top:0px; padding-top:0px;">FRI</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td>
+                      <![endif]-->
+
+                      <!--EVENTS OF DAY-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <!--FIRST EVENT OF DAY-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="content eventOfDay" style="max-width: 300px;border-collapse: collapse;border-spacing: 0;margin-right:0px;margin-left:0px;margin-top:0px;margin-bottom:0px;" width="auto">
+                          <tr>
+                            <td align="left">
+                              <p style="font-family: Trebuchet MS, Helvetica, Arial, sans-serif;color:#ffffff;font-size: 18px;font-weight: 700;line-height: 18px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none; padding-top:12px; margin-top:0px;margin-bottom:0;">
+                                Seminar: Multimission Fuel-burn Minimization In Aircraft Design
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #cccccc; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:1px; margin-bottom:0px;">
+                                Asst. Prof. Rhea P. Liem
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #cccccc; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:4px;">
+                                LT5 2.505, 12pm
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #eeeeee; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:8px;">
+                                A surrogate-modeling approach.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="padding-top: 0px; padding-bottom:12px; margin-bottom:0px;">
+                              <!--[if mso]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://root.sutd.edu.sg" style="height:42px;v-text-anchor:middle;width:220px;" arcsize="250%" stroke="f" fillcolor="#ffae1c">
+                                <w:anchorlock/>
+                                <center>
+                              <![endif]-->
+                              <a class="btn-a" target="_blank" href="http://root.sutd.edu.sg/2015/nov/idc-seminar" style="background-color:#335533; border-radius:4px; color:#ffffff; display:inline-block; font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif; font-size:13px; font-weight:400; line-height:28px; text-align:center; text-decoration:none; width:50%;">Read more</a>
+                              <!--[if mso]>
+                                </center>
+                                </v:roundrect>
+                              <![endif]-->
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--SECOND EVENT OF DAY-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="content eventOfDay" style="max-width: 300px;border-collapse: collapse;border-spacing: 0;margin-right:0px;margin-left:0px;margin-top:0px;margin-bottom:0px;" width="auto">
+                          <tr>
+                            <td align="left">
+                              <p style="font-family: Trebuchet MS, Helvetica, Arial, sans-serif;color:#ffffff;font-size: 18px;font-weight: 700;line-height: 18px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none; padding-top:12px; margin-top:0px;margin-bottom:0;">
+                                Biodiversity Issues
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #cccccc; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:1px; margin-bottom:0px;">
+                                Abhishek Bajaj (SUTD) & Sean Yap (NUS)
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #cccccc; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:4px;">
+                                SUTD Library Level 3, 2pm - 3.30pm
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #eeeeee; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:8px;">
+                                Come find out about the biodiversity in Singapore and the issues associated with it!
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="padding-top: 0px; padding-bottom:12px; margin-bottom:0px;">
+                              <!--[if mso]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://root.sutd.edu.sg" style="height:42px;v-text-anchor:middle;width:220px;" arcsize="250%" stroke="f" fillcolor="#ffae1c">
+                                <w:anchorlock/>
+                                <center>
+                              <![endif]-->
+                              <a class="btn-a" target="_blank" href="http://root.sutd.edu.sg/2015/nov/biodiversity-issues" style="background-color:#335533; border-radius:4px; color:#ffffff; display:inline-block; font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif; font-size:13px; font-weight:400; line-height:28px; text-align:center; text-decoration:none; width:50%;">Read more</a>
+                              <!--[if mso]>
+                                </center>
+                                </v:roundrect>
+                              <![endif]-->
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!--THIRD EVENT OF DAY-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="content eventOfDay" style="max-width: 300px;border-collapse: collapse;border-spacing: 0;margin-right:0px;margin-left:0px;margin-top:0px;margin-bottom:0px;" width="auto">
+                          <tr>
+                            <td align="left">
+                              <p style="font-family: Trebuchet MS, Helvetica, Arial, sans-serif;color:#ffffff;font-size: 18px;font-weight: 700;line-height: 18px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none; padding-top:12px; margin-top:0px;margin-bottom:0;">
+                                OMS Nine: Under The Stars
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #cccccc; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:1px; margin-bottom:0px;">
+                                SUTD Bands
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #cccccc; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:4px;">
+                                Undisclosed Venue, 7pm - 10pm
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left">
+                              <p style="color: #eeeeee; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:8px;">
+                                Come watch and support your friends perform live under the stars in an immersive musical experience!
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="padding-top: 0px; padding-bottom:12px; margin-bottom:0px;">
+                              <!--[if mso]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://root.sutd.edu.sg" style="height:42px;v-text-anchor:middle;width:220px;" arcsize="250%" stroke="f" fillcolor="#ffae1c">
+                                <w:anchorlock/>
+                                <center>
+                              <![endif]-->
+                              <a class="btn-a" target="_blank" href="http://root.sutd.edu.sg/2015/nov/oms-nine-under-stars" style="background-color:#335533; border-radius:4px; color:#ffffff; display:inline-block; font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif; font-size:13px; font-weight:400; line-height:28px; text-align:center; text-decoration:none; width:50%;">Read more</a>
+                              <!--[if mso]>
+                                </center>
+                                </v:roundrect>
+                              <![endif]-->
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+
+                    </td>
+                  </tr>
+                </table>
+                <!--[if (IE)|mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <!--SEPERATOR--><!--This line to be slightly different as it marks the end of the calendar-->
+    <table class="borderAfterCalendar" style="border-collapse: collapse;border-spacing: 0;font-size: 1px;line-height: 2px;background-color: #a7a7a7; Margin-left: auto;Margin-right: auto;" width="100%">
+          <tbody><tr><td style="padding: 0;vertical-align: top;">&#8203;</td></tr>
+          </tbody>
+    </table>
+
+    <!--NEW EVENT BROADCASTS HEADER-->
+    <table bgcolor="#1d2023" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;border-spacing: 0;">
+      <tr>
+        <td align="center" style="padding: 8px 24px">
+          <!--[if (IE)|mso]>
+          <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+          <tr>
+          <td>
+          <![endif]-->
+
+          <!--EVENTS HEADER WRAPPER TABLE--><!--SET WIDTH HERE-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+            <tr>
+              <td align="left" style="padding-top: 0px;">
+                <!--[if (IE)|mso]>
+                <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+                <tr>
+                <td>
+                <![endif]-->
+
+                <!--EVENTS HEADER CONTENT TABLE--><!--SET WIDTH HERE-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+                  <tr>
+                    <!--CHANGE CONTENT ALIGN HERE-->
+                    <td align="center" class="s-tac" style="font-size: 0;">
+
+                      <!--FIRST COLUMN-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <table align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="flex-size sectionHeader" width="232" style="vertical-align:middle; border-collapse: collapse;border-spacing: 0;margin-top:0px;margin-bottom:0px;margin-left:15px;margin-right:15px;">
+                          <tr>
+                            <td valign="middle" align="center" style="vertical-align:middle; padding-top:10px; padding-bottom:10px; margin:0px;">
+                              <p style="font-family: Trebuchet MS, sans-serif; font-weight:lighter;color: #d7d7d7;font-size: 16px;letter-spacing: 0em; margin-bottom:0px; margin-top:0px; padding-top:0px;">NEW EVENT BROADCASTS</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td>
+                      <![endif]-->
+                    </td>
+                  </tr>
+                </table>
+                <!--[if (IE)|mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <!--SEPERATOR-->
+    <table class="borders" style="border-collapse: collapse;border-spacing: 0;font-size: 1px;line-height:1px;background-color: #f7f7f7; Margin-left: auto;Margin-right: auto;" width="100%">
+          <tbody><tr><td style="padding: 0;vertical-align: top;">&#8203;</td></tr>
+          </tbody>
+    </table>
+
+    <!--NEW EVENT BROADCASTS-->
+    <table bgcolor="#f7f7f7" background="" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;border-spacing: 0;background-image:url();background-size:cover;">
+      <tr>
+        <td align="center" style="padding: 8px 24px">
+          <!--[if (IE)|mso]>
+          <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+          <tr>
+          <td>
+          <![endif]-->
+
+          <!--NEW EVENTS WRAPPER CONTENT TABLE--><!--SET WIDTH HERE-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+            <tr>
+              <td align="left" style="padding-top: 0px;">
+                <!--[if (IE)|mso]>
+                <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+                <tr>
+                <td>
+                <![endif]-->
+
+                <!--NEW EVENTS CONTENT TABLE--><!--SET WIDTH HERE-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+                  <tr>
+                    <!--CHANGE CONTENT ALIGN HERE-->
+                    <td align="center" class="s-tac" style="font-size: 0;">
+
+                      <!--FIRST BROADCAST COLUMN-->
+                      <div style="display: inline-block; vertical-align: top;">
+                        <!--FIRST EVENT OF FIRST COLUMN-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="content eventOfDay" style="max-width: 246px;border-collapse: collapse;border-spacing: 0;margin-right:15px;margin-left:15px;margin-top:0px;margin-bottom:6px;" width="auto">
+                          <tr>
+                            <td align="center">
+                              <p style="font-family: Trebuchet MS, Helvetica, Arial, sans-serif;color:#000000;font-size: 18px;font-weight: 700;line-height: 18px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none; padding-top:12px; margin-top:0px;margin-bottom:4px;">
+                                SG50/SMU15 Celebrations:</br>Panel Session [Invitation]
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p style="color: #444444; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:0px;">
+                                Raffles Hotel, The Ballroom
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p style="color: #444444; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:6px;">
+                                25 November, 3pm
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="padding-top: 0px; padding-bottom:12px; margin-bottom:0px;">
+                              <a target="_blank" href="http://root.sutd.edu.sg/2015/nov/invitation-sg50smu15-celebrations-singapore-thriving-and-sustainable-trading-hub">
+                                <img style="border-color: #1f1f1f; width:95%;" alt="" border="1px" src="http://i.imgur.com/SFtnTEG.png" width="95%">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p style="color: #000000; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:4px;">
+                                Singapore as a Thriving and Sustainable Trading Hub: What Is Needed For The Next 50 Years?
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="content eventOfDay" style="max-width: 246px;border-collapse: collapse;border-spacing: 0;margin-right:15px;margin-left:15px;margin-top:0px;margin-bottom:6px;" width="auto">
+                          <tr>
+                            <td align="center">
+                              <p style="font-family: Trebuchet MS, Helvetica, Arial, sans-serif;color:#000000;font-size: 18px;font-weight: 700;line-height: 18px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none; padding-top:12px; margin-top:0px;margin-bottom:4px;">
+                                CSD&M Asia 2016
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p style="color: #444444; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:0px;">
+                                SUTD
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p style="color: #444444; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:6px;">
+                                24-26 February, 2016
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="padding-top: 0px; padding-bottom:12px; margin-bottom:0px;">
+                              <a target="_blank" href="http://root.sutd.edu.sg/2015/nov/csdm-asia-2016">
+                                <img style="border-color: #1f1f1f; width:95%;" alt="" border="1px" src="http://i.imgur.com/PBsvvf7.png" width="95%">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p style="color: #000000; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:4px;">
+                                Register now and brainstorm on Systems Engineering serving Smart Nations.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td>
+                      <![endif]-->
+
+                      <!--SECOND BROADCAST COLUMN-->
+                      <div style="display: inline-block; vertical-align: top;">
+                        <!--FIRST EVENT OF SECOND COLUMN-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="content eventOfDay" style="max-width: 246px;border-collapse: collapse;border-spacing: 0;margin-right:15px;margin-left:15px;margin-top:0px;margin-bottom:6px;" width="auto">
+                          <tr>
+                            <td align="center">
+                              <p style="font-family: Trebuchet MS, Helvetica, Arial, sans-serif;color:#000000;font-size: 18px;font-weight: 700;line-height: 18px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none; padding-top:12px; margin-top:0px;margin-bottom:4px;">
+                                JTC - SGBC Smart Green Buildings 2015
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p style="color: #444444; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:0px;">
+                                JTC Theatrette, Level 2 @ JTC Summit
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p style="color: #444444; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:6px;">
+                                4 Dec, Friday, 2pm - 5pm
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="padding-top: 0px; padding-bottom:12px; margin-bottom:0px;">
+                              <a target="_blank" href="http://root.sutd.edu.sg/2015/nov/jtc-sgbc-smart-green-buildings-2015">
+                                <img style="border-color: #1f1f1f; width:95%;" alt="" border="1px" src="http://root.sutd.edu.sg/sites/default/files/Happenings/last_22_11_15/smartgreenbuildings.png" width="95%">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p style="color: #000000; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:4px;">
+                                Come join us for an afternoon of learning and interaction with leaders in the green building industry!
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+
+                    </td>
+                  </tr>
+                </table>
+                <!--[if (IE)|mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <!--SEPERATOR-->
+    <table class="borders" style="border-collapse: collapse;border-spacing: 0;font-size: 1px;line-height: 1px;background-color: #cccccc; Margin-left: auto;Margin-right: auto;" width="100%">
+          <tbody><tr><td style="padding: 0;vertical-align: top;">&#8203;</td></tr>
+          </tbody>
+    </table>
+
+    <!--NEW OPPORTUNITIES HEADER-->
+    <table bgcolor="#1d2023" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;border-spacing: 0;">
+      <tr>
+        <td align="center" style="padding: 8px 24px">
+          <!--[if (IE)|mso]>
+          <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+          <tr>
+          <td>
+          <![endif]-->
+
+          <!--OPPORTUNITIES HEADER WRAPPER TABLE--><!--SET WIDTH HERE-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+            <tr>
+              <td align="left" style="padding-top: 0px;">
+                <!--[if (IE)|mso]>
+                <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+                <tr>
+                <td>
+                <![endif]-->
+
+                <!--OPPORTUNITIES HEADER CONTENT TABLE--><!--SET WIDTH HERE-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+                  <tr>
+                    <!--CHANGE CONTENT ALIGN HERE-->
+                    <td align="center" class="s-tac" style="font-size: 0;">
+
+                      <!--FIRST COLUMN-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <table align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="flex-size sectionHeader" width="232" style="vertical-align:middle; border-collapse: collapse;border-spacing: 0;margin-top:0px;margin-bottom:0px;margin-left:15px;margin-right:15px;">
+                          <tr>
+                            <td valign="middle" align="center" style="vertical-align:middle; padding-top:10px; padding-bottom:10px; margin:0px;">
+                              <p style="font-family: Trebuchet MS, sans-serif; font-weight:lighter;color: #d7d7d7;font-size: 16px;letter-spacing: 0em; margin-bottom:0px; margin-top:0px; padding-top:0px;">NEW OPPORTUNITIES</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td>
+                      <![endif]-->
+                    </td>
+                  </tr>
+                </table>
+                <!--[if (IE)|mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <!--SEPERATOR-->
+    <table class="borders" style="border-collapse: collapse;border-spacing: 0;font-size: 1px;line-height: 1px;background-color: #cccccc; Margin-left: auto;Margin-right: auto;" width="100%">
+          <tbody><tr><td style="padding: 0;vertical-align: top;">&#8203;</td></tr>
+          </tbody>
+    </table>
+
+    <!--NEW OPPORTUNIES-->
+    <table bgcolor="#f7f7f7" background="" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;border-spacing: 0;background-image:url();background-size:cover;">
+      <tr>
+        <td align="center" style="padding: 8px 24px">
+          <!--[if (IE)|mso]>
+          <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+          <tr>
+          <td>
+          <![endif]-->
+
+          <!--NEW OPPORTUNITIES CONTENT TABLE--><!--SET WIDTH HERE-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+            <tr>
+              <td align="left" style="padding-top: 0px;">
+                <!--[if (IE)|mso]>
+                <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+                <tr>
+                <td>
+                <![endif]-->
+
+                <!--NEW OPPORTUNITIES CONTENT TABLE--><!--SET WIDTH HERE-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+                  <tr>
+                    <!--CHANGE CONTENT ALIGN HERE-->
+                    <td align="center" class="s-tac" style="font-size: 0;">
+
+                      <!--FIRST OPPORTUNITIES COLUMN-->
+                      <div style="display: inline-block; vertical-align: top;">
+                        <!--FIRST OPPORTUNITY OF FIRST COLUMN-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="content eventOfDay" style="max-width: 246px;border-collapse: collapse;border-spacing: 0;margin-right:15px;margin-left:15px;margin-top:0px;margin-bottom:6px;" width="auto">
+                          <tr>
+                            <td align="center">
+                              <p style="font-family: Trebuchet MS, Helvetica, Arial, sans-serif;color:#000000;font-size: 18px;font-weight: 700;line-height: 18px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none; padding-top:12px; margin-top:0px;margin-bottom:4px;">
+                                2016 ASEAN+3</br>Youth Environment Forum </br>Youth Planning Team
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p style="color: #444444; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 300; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:6px;">
+                                Application closes 30 Nov
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="padding-top: 0px; padding-bottom:12px; margin-bottom:0px;">
+                              <a target="_blank" href="http://root.sutd.edu.sg/2015/nov/asean3-youth-environment-forum-2016-youth-planning-team">
+                                <img style="border-color: #1f1f1f; width:95%;" alt="" border="1px" src="http://root.sutd.edu.sg/sites/default/files/Happenings/last_22_11_15/image002.jpg" width="95%">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p style="color: #000000; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; letter-spacing:0.2px;line-height: 15px; padding:0; margin-top:0px; margin-bottom:4px;">
+                                Join the ASEAN+3 Youth Environment Forum 2016 Youth Planning Team Now and Get a Unique First-Hand Experience!
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td>
+                      <![endif]-->
+
+                    </td>
+                  </tr>
+                </table>
+                <!--[if (IE)|mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <!--FOOTER-->
+    <table bgcolor="#1d2023" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;border-spacing: 0;">
+      <tr>
+        <td align="center" style="padding: 8px 24px">
+          <!--[if (IE)|mso]>
+          <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+          <tr>
+          <td>
+          <![endif]-->
+
+          <!--FOOTER WRAPPER TABLE--><!--SET WIDTH HERE-->
+          <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+            <tr>
+              <td align="left" style="padding-top: 0px;">
+                <!--[if (IE)|mso]>
+                <table align='center' border='0' cellpadding='0' cellspacing='0' width='480'>
+                <tr>
+                <td>
+                <![endif]-->
+
+                <!--FOOTER CONTENT TABLE--><!--SET WIDTH HERE-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 600px;border-collapse: collapse;border-spacing: 0;" width="100%">
+                  <tr>
+                    <!--CHANGE CONTENT ALIGN HERE-->
+                    <td align="center" class="s-tac" style="font-size: 0;">
+
+                      <!--FIRST COLUMN-->
+                      <div style="display: inline-block; vertical-align: middle;">
+                        <table align="left" valign="middle" border="0" cellpadding="0" cellspacing="0" class="flex-size sectionHeader" width="280" style="vertical-align:middle; border-collapse: collapse;border-spacing: 0;margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;">
+                          <tr>
+                            <td align="center" class="text roottldr" style="color: #aebdc1;font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;font-size: 12px;line-height: 18px;padding: 32px 20px 0px 20px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none;">
+                              R O O T : t l ; d r&nbsp;
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" class="text roottldr" style="color: #aebdc1;font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;font-size: 12px;line-height: 18px;padding: 0px 20px 32px 20px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none;">
+                              B E T A
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="color: #aebdc1;font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;font-size: 12px;line-height: 18px;padding: 0px 0px 32px 0px;mso-line-height-rule: exactly;-webkit-font-smoothing: antialiased;-ms-text-size-adjust: none;-webkit-text-size-adjust: none;">
+                              If you wish to publicize your item on tl;dr, please refer to the latest</br><a href="https://www.dropbox.com/s/0s0mlxdd0iopp63/Communications%20Guidelines.pdf?dl=0" target="_blank" style="color:#557755; text-decoration:none;">Communication Guidelines.</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                      </td>
+                      <td>
+                      <![endif]-->
+                    </td>
+                  </tr>
+                </table>
+                <!--[if (IE)|mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>

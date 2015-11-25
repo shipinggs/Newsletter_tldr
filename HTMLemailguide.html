@@ -1,0 +1,89 @@
+<!STEP !: USE HTML TABLES FOR LAYOUT>
+
+It’s important to remember the most important content should appear at or near the top of the email, so it is visible immediately when a reader opens your email. The top left of an email message is often the first place people look when they open an email.
+
+A single-column layout typically consists of:
+
+a header, containing a logo and some (or all) of the navigation links from the parent web site to reinforce the branding and provide familiarity for site visitors
+intra-email links to stories that appear further down in the email followed by the stories and content
+a footer at the bottom of the email, which often contains links that are identical to the top navigation, as well as instructions for unsubscribing
+
+For a two-column layout, create one table each for the header, the two center content columns, and the footer — that’s three tables in all. Wrap these tables into another container table. Use the same approach for single-column layouts, but give the content table one column. This approach is especially suitable if the design of your email contains images that are broken up over multiple table cells. Otherwise, a single table with td rows for its header (with colspan="2" if the design uses two columns), content, and footer should display fine in all but Lotus Notes email software.
+
+Use the attributes within the table and td tags to control the table’s display. For example, setting border="0", valign="top", align="left" (or center, if that suits the design), cellpadding="0", cellspacing="0", and so on. This primarily helps older email clients to display the email in a (barely) acceptable way.
+
+Even if the design of your email doesn’t include a border around your table, you might find it helpful during development to set border="1" to help with the debugging of any problems that arise with the internal alignment of tr and td tags. Change it back to border="0" for testing and production.
+
+
+<!STEP 2: ADD CSS STYLES>
+
+For your container table — the one that houses the header, content, and footer tables — set the table width to 98%. It turns out that Yahoo! mail needs that 1% cushion on either side in order to display the email properly. If side gutters are critical to your email’s design, set the width to 95% or even 90% to avoid potential problems. Of course, the tables inside the container table should be set to 100%.
+
+Put general font style information in the table td closest to the content. Yes, this can result in repetitive style declarations within multiple td cells. Put font style definitions into heading (e.g. h1, h2), p, or a tags only when necessary.
+
+While divs appear to be barely useful, spans appear to work almost every time, because they’re inline elements. In some cases, spans can be used for more than just coloring or sizing text: they can be used to position text above or below content.
+
+
+<!STEP 3: ADOPT BEST PRACTICES>
+
+The next step is to test your HTML email in a variety of email clients. Often this will identify problems that require workarounds.
+
+The first test tools to use are the Firefox and Internet Explorer web browsers. If the email displays well or perfectly in both browsers, there’s a good chance testing the email in Outlook, Yahoo!, Google Mail, and other services will reveal only minor problems. If possible, I’d also recommend testing your email in Internet Explorer 6 — this should give you a good indication of how your email will render in Outlook 2003 (refer to the list of resources at the end of this article for information on running Internet Explorer 6). Finally, to test how email will look on an iPhone or iPad, check your HTML email in a Safari web browser.
+
+Here are the most common code tweaks that I’ve found necessary during this test phase:
+
+Sometimes, a switch from percentage widths to fixed widths is needed. While this is not ideal — because readers can and do resize their email windows while reading — sometimes, using a fixed width is the only way to have a layout display properly in multiple email clients.
+If there’s a spacing issue with the columns in the email design, first tweak the cellpadding and cellspacing attributes of the HTML tables. If that doesn’t work, apply CSS margin and padding attributes. HTML spacing works better with older email software.
+Image displacement can occur when a td cell is closed right below an img tag. This is an ancient HTML problem. Putting the </td> tag right after (on the same line as) the img tag eliminates the annoying and mystifying 1-pixel gap.
+
+In addition, the following best practices are recommended:
+
+	.Avoid using JavaScript. Most email software will disable it anyway.
+	.If an image is sliced up and spread across several HTML table cells, test the email using many test accounts. Sometimes, it might look great in Outlook but be shifted by one or more pixels in Hotmail and other services. Also consider making the image a background image on a new HTML table that encases all of the table rows and columns that would display parts of your background image; this often achieves the same effect as slicing an image up, but uses less code and can provide better results (see below). Note that Outlook 2007 does not display background images; be sure to test your email code with your target email software.
+	.For background images, use the table’s background attribute instead of using CSS. This works more consistently across email software than other potential solutions.
+	.Store the email images on a web server — preferably in a folder that’s separate from your web site’s images (for example, in a folder called /images/email), and don’t delete them. Some people open emails weeks or months later, the same way people use bookmarks to return to web sites.
+	.Be sure all your images use the alt, height, and width attributes. Setting values for these attributes improves results in Google Mail, as well as maintaining your layout when a reader has their images turned off. Note, however, that Outlook 2007 does not recognize the alt attribute.
+	.Use the target="_blank" attribute for the a tags, so that people who read with webmail services don’t have the requested page appear within their webmail interface.
+	.While a 1×1-pixel image can be used to force spacing to create a precise email layout, spammers often use 1×1-pixel images to determine if their email has been opened. Using this practice will increase the likelihood that your email is classified as spam.
+	.Similarly, avoid using a large image “above the fold” in the email. This is another classic spammer practice and may cause your email to be interpreted as spam.
+
+<!STEP 4: CODE FOR GOOGLE MAIL, LOTUS NOTES, OUTLOOK 2007>
+
+Google Mail:
+Define the background color in a td cell with the bgcolor attribute, not the CSS style.
+As noted above, use the background attribute in the td cell for background images instead of using CSS. One side-effect of this approach is that the background image can be made as tall as needed — if the content used in your email template is likely to vary in size, using an extra-tall background image in this way allows the height of the email shrink or expand, depending on the height of the copy, from one email to the next. Remember, though, that Outlook 2007 ignores background images completely.
+If it works better, use the padding declaration to control margins within a td cell. The margin style does not work in these cells, but padding does.
+If you need a border around a td cell, keep in mind that Google Mail displays a border around a td cell when it’s defined in a div, but not when it’s defined as a border style in a td tag.
+If you need a light-colored link against a dark background color, put the font definition in the td cell (so it applies to p and a tags equally) then add a color: style to the a tag.
+If the p and a fonts appear to be different sizes, wrap the a tag in a p tag.
+Google Mail aggressively uses the right-hand column of the Google Mail user interface, which squeezes the HTML email into the center panel. Be sure the padding style in the content tds is set to 10 pixels all round, so that text does not hit against the left and right edges.
+When testing an HTML email with a Google Mail account, it’s likely that you’ll find that one or more font styles are missing in the td, h1, h2, p, a, and other tags. Inspect every font carefully to make sure Google Mail displays the fonts correctly.
+
+Lotus Notes:
+As we discussed previously, use a container table that contains all the internal layout tables (for example, for the header, content, and footer). This keeps the email together in one chunk of HTML, so pieces of the layout are less likely to wander when displayed in Notes.
+Create a gutter around the container table by setting the width to a percentage and/or using a cellpadding of at least 5.
+As I mentioned earlier, avoid using a style declaration in your email’s head tag. It might be the approach that adheres to web standards, but Notes (like Google Mail) might delete your styles. Rely, instead, on inline styles within the table, td, h1, h2, p, a, and other tags.
+Use absolute URLs to images stored on a web server. You can’t do much about Notes converting images, but using remote images might help.
+Intra-email links, using named anchors, rarely (if ever) work in Notes. It’s simply best to avoid links that jump down the email to a specific piece of content.
+Avoid colspans in your HTML tables. Notes — especially its earlier versions — can deal only with basic table layouts.
+Be sure that your td cell widths are accurate. Unlike web browsers, which automatically set all cells to the widest-defined width, Notes sizes each td cell based on its defined width.
+Centering an email layout usually won’t work in Notes. Email layouts generally have to be left-aligned.
+
+<!STEP 5: CODING FOR PHONES AND TABLETS>
+
+Here’s a sample set of @media definitions to display a one-column layout HTML table for phones and tablets:
+
+@media only screen and (max-width: 480px) {
+  /* mobile-specific CSS styles go here */
+  table[class=email], table[class=email-content] { 
+    clear: both;
+    width: 320px !important;
+    font-size: 13px !important;
+  }
+}
+
+Place this @media code directly below your body tag class="email" to your table definition and class="email-content" to your TD cells. When your HTML email is viewed with a device (or web browser horizontally re-sized) less than 480 pixels, these definitions will activate.
+
+
+The secret to coding a two-column HTML email to adapt to small phone and tablet screens? Put each column into its own table. Next, for each HTML table, use inline CSS to float: left and HTML align="left" to float and align each content column table to the left. Then add  class="email" to your table definition and class="email-content" to your TD cells.
+
